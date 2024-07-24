@@ -1,0 +1,261 @@
+/* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial;
+    font-size: 17px;
+    overflow-x: hidden;
+
+}
+
+div .nav-bar .nav-barContent {
+    top: 0px;
+    display: grid;
+    height: 80px;
+    width: 100%;
+    background-color: transparent;
+    grid-template-columns: auto auto 55% auto auto auto auto auto;
+    /*justify-content: space-between;
+    position: sticky;
+    position: fixed;
+    color: #ffffff;
+    list-style: none;
+    transition: background-color 0.3s ease
+}
+
+
+.nav-barContent a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.nav-bar ul li {
+    display: inline-block;
+    line-height: 80px;
+    font-family: sans-serif;
+    margin: 0 5px;
+    color: #ffffff;
+    /*margin-left:50px;
+}
+
+#Menu {
+    margin-left: 45px;
+}
+
+.nav-bar .nav-barContent:hover {
+    background-color: #fff;
+}
+
+.nav-barContent:hover,
+.nav-barContent li:hover,
+#LV:hover {
+
+    color: #000;
+
+}
+
+
+
+#LV {
+    margin-top: 20px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    margin-left: 140px;
+    /*top: 20px;
+    bottom: 0;
+    color: #ffffff;
+    font-size: 30px;
+    /* align-items: center;
+    justify-items: center;
+    position: relative;
+    letter-spacing: 3px;
+}
+
+
+.informations {
+    display: grid;
+    grid-template-rows: 50% 50%;
+    background-color: #fff;
+    margin-top: 0px;
+}
+
+.informations ul li {
+    display: inline;
+    font-family: sans-serif;
+    margin: 0 20px;
+    font-size: 13px;
+
+}
+
+.informations h2 {
+    text-align: center;
+    margin-top: 15px;
+
+}
+
+.Menucontent {
+
+    color: hsl(0, 0%, 0%);
+    margin-top: -520px;
+    margin-right: 80%;
+    display: none;
+    padding: 15px;
+    background-color: #fff;
+    height: 500px;
+}
+
+.Menucontent a {
+    color: #000;
+    text-decoration: none;
+    background-color: #fff;
+    margin-top: 8%;
+    padding-left: 15px;
+
+
+}
+
+.Menucontent p {
+    padding: 15px;
+    background-color: #fff;
+}*/
+
+.video_women {
+    z-index: -1;
+    overflow: hidden;
+    /* Masque le contenu vidéo qui dépasse du conteneur */
+    outline: none;
+    /* Pour supprimer la bordure de mise au point sur l'élément vidéo */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Ajuste la vidéo pour remplir complètement le conteneur */
+}
+
+/*.titre{
+    
+      text-align: left;
+      font-size:20px;
+      margin-top: -630px;
+      padding-left:50px;
+      font-family: 'Times New Roman', Times, serif;
+    }*/
+.body {
+    background-color: rgb(255, 255, 255);
+}
+
+.Dressescards,
+.Handbagscards,
+.Necklacescards {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    column-gap: 10px;
+    overflow-x: auto;
+
+}
+
+.Handbagscards::-webkit-scrollbar,
+.Necklacescards::-webkit-scrollbar {
+    width: 0%;
+}
+
+.Dressescards::-webkit-scrollbar {
+    width: 0%;
+}
+
+.Dresses .dresstype{
+    margin-top:600px;
+    padding-left: 30px;
+}
+
+h5 {
+
+    font-size: 25px;
+    padding: 20px;
+    color: rgb(152, 7, 7);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.card {
+
+    border: 1px solid rgb(141, 140, 140)6d6;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    width: 300px;
+    margin-left: 2%;
+    height: 400px;
+    margin: 15px;
+    transition: all 300ms ease;
+}
+
+.card:hover {
+    transform: scale(1.2);
+}
+
+.card img {
+    width: 200px;
+    height: 200px;
+    padding-top: 0px;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.card-body {
+    padding: 20px;
+    margin-top: -20px;
+    width: 300px;
+    height: 200px;
+    display: grid;
+    grid-template-rows: 30% 20% 30%;
+}
+
+.card-title {
+    color: black;
+
+}
+
+.card-text {
+    color: #555;
+    font-size: 20px;
+
+
+}
+
+.price {
+    font-size: 1.25rem;
+    color: rgb(82, 4, 4);
+
+}
+
+
+.btn {
+    display: inline-block;
+    color: hsl(0, 0%, 100%);
+    border: 1px solid rgb(78, 78, 78);
+    border-radius: 35px;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    background-color: rgba(251, 177, 177, 0.824);
+    font-size: small;
+    width: 80%;
+    height: 90%;
+    text-align: center;
+
+}
+
+.btn:hover {
+    background-color: hsl(0, 0%, 100%);
+    
+    color: hsl(0, 0%, 0%);
+
+}

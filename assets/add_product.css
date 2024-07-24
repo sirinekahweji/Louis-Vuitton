@@ -1,0 +1,39 @@
+body {
+    background-color: #f8f9fa;
+}
+.container {
+    max-width: 700px;
+    margin-left: 0px;
+    margin-right: 50px;
+    margin-bottom: 30px;
+    margin-top: 70px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex; /* Utiliser flexbox pour organiser les éléments enfants */
+    flex-direction: column; /* Organiser les éléments en colonne */
+    align-items: center; /* Centrer les éléments horizontalement */
+}
+
+.form-group {
+    margin-bottom: 20px;
+    width: 100%; /* Faire en sorte que chaque élément de formulaire occupe toute la largeur */
+}
+
+.input-group {
+    position: relative;
+    font-size: 40px;
+    width: 100%; /* Faire en sorte que l'input group occupe toute la largeur */
+}
+
+button {
+    background-color: #131313;
+    color: #fff;
+    border: none;
+    padding: 10px 90px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left: 80px;
+    margin-top: 20px; /* Ajouter une marge en haut pour l'espacement */
+}

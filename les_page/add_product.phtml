@@ -1,0 +1,56 @@
+
+<div class="container py-4">
+    <h4 class="mt-5 mb-4">Ajouter un Produit</h4>
+    <br><hr><br>
+    <form name="myForm"action="add_product.php" method="post" enctype="multipart/form-data"style="margin:15px;"class="form-container">
+        <div class="form-group">
+            <label for="categorie">Catégorie :</label>
+            <input type="text" class="form-control" id="categorie" name="categorie" required>
+        </div>
+        <div class="form-group">
+            <label for="titre">Titre :</label>
+            <input type="text" class="form-control" id="titre" name="titre" required>
+        </div>
+        <div class="form-group">
+            <label for="description">Description :</label>
+            <textarea class="form-control" id="description" name="description" required></textarea>
+        </div><br>
+        <div class="form-group">
+            <label for="couleur">Couleur :</label>
+            <input type="color"  id="couleur" name="couleur" required>
+        </div>
+        <div class="form-group">
+            <label for="taille">Taille :</label>
+            <input type="number" class="form-control" id="taille" name="taille" required>
+        </div>
+        <div class="form-group">
+            <label for="public">Public :</label>
+            <input type="radio"  id="public" name="public" >M
+            <input type="radio" id="public" name="public">F
+        </div>
+        <div class="form-group">
+            <label for="photo">Photo :</label>
+            <input type="file" class="form-control-file" id="photo" name="photo" required>
+        </div>
+        <div class="form-group">
+            <label for="prix">Prix :</label>
+            <input type="number" class="form-control" id="prix" name="prix" step="0.01" required>
+        </div>
+        <div class="form-group">
+            <label for="stock">Stock :</label>
+            <input type="number" class="form-control" id="stock" name="stock" required>
+        </div>
+        <br>
+        <button type="submit" class="btn btn-primary">Add Product</button>
+        <button type="button" class="btn btn-secondary" onclick="cancelAdd()">cancelAdd</button> 
+       </form>
+</div>
+
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+

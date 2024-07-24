@@ -1,0 +1,244 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: Arial;
+    font-size: 17px;
+    overflow-x: hidden;
+  
+  }
+  
+  
+  div .nav-bar .menu{
+    top: 0px;
+    display: grid;
+    height: 80px;
+    width: 100%;
+    background-color: transparent;
+    grid-template-columns: auto auto 55%  auto auto auto  auto auto;
+    /*justify-content: space-between;*/
+    position: sticky;
+    position: fixed;
+    color: #ffffff;
+    list-style: none;
+    transition: background-color 0.3s ease
+  }
+  
+  /*div .nav-bar .nav {
+    float: right;
+    margin-right: 20px;
+    list-style: none;
+  }*/
+  
+  /* Ajoutez ce code dans votre fichier styles.css 
+  
+  .menu {
+    list-style-type: none;
+  }
+  
+  .menu li {
+    display: flex;
+    align-items: center;
+  }*/
+  
+  
+  
+  .menu a{
+    text-decoration: none;
+    color: #ffffff;
+  }
+  
+  .nav-bar ul li {
+    display: inline-block;
+    line-height: 80px;
+    font-family: sans-serif;
+    margin: 0 5px;
+    color: #ffffff;
+   /*margin-left:50px;*/
+  }
+  #Menu{
+     margin-left:45px;
+  }
+  .nav-bar .menu:hover {
+    background-color: #ffffff;
+  }
+  .menu:hover,
+  .menu li:hover,
+  #LV:hover {
+  
+    color: #000;
+    
+  }
+   
+  
+  .video {
+    position: absolute;
+    margin-bottom:0px;
+    z-index: -1;
+    width: 100%;
+    height: 110%;
+    margin-top: 0px;
+    overflow: hidden;
+    
+  
+  }
+  .video video {
+    outline: none; 
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+  }
+   #LV {
+    margin-top:20px;
+    text-align:center;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    margin-left: 140px;
+    /*top: 20px;
+    bottom: 0;*/
+    color: #ffffff;
+    font-size: 30px;
+   /* align-items: center;
+    justify-items: center;
+    position: relative;*/
+    letter-spacing: 3px;
+  }
+  
+  .cont {
+    text-align: center;
+  }
+  
+  .cont a {
+    text-decoration: none;
+    display: inline-block;
+    margin-top:15px;
+    color: hsl(0, 0%, 100%);
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 35px;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    margin-bottom: 50px;
+    background-color: #2b2b2bba;
+    font-family: "Lucida Console";
+    font-size: small;
+  }
+  
+  .cont a:hover {
+  
+    border: 2px solid #ffffff;
+  
+  }
+  
+  .cont h3 {
+    display: block;
+    padding-top:450px;
+  
+    color: #fefefe;
+    font-size:30px;
+  }
+  
+  .products_img{
+    position: absolute;
+    width:100%;
+    height:100%;
+    z-index: -1;
+  }
+  /* Styliser la section "Services" dans le footer */
+  footer{
+  
+    background-color: #f2efef;
+    padding: 30px;
+  
+  }
+  .services {
+    padding-left:50px;
+    padding-right: 50px;
+    text-align: center;
+    display: grid;
+    grid-template-rows:10% 90%;
+  
+  }
+  
+  /* Styliser le titre "Services" */
+  .services h1 {
+    font-size: 24px;
+    padding-top: 0%;
+    margin-top:-20px;
+   
+  }
+  
+  /* Styliser la disposition des images et des descriptions */
+  .bodyservices{
+  
+     display: grid;
+     grid-template-columns: 30% 30% 30%;
+     grid-column-gap:20px
+  
+  }
+  
+  /* Styliser les images des services */
+   .services_img {
+    width:100%;
+    height:100%;
+    margin-top:0px;
+   
+  }
+  
+  /* Styliser les descriptions des services */
+  .services p {
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: left;
+    margin-top:20px;
+  }
+  .informations{
+    display: grid;
+    grid-template-rows: 50% 50%;
+    background-color: #fff;
+    margin-top:180px;
+    padding: 15px;
+  }
+  .informations ul li{
+    display: inline;
+    font-family: sans-serif;
+    margin: 0 20px;
+    font-size:13px;
+  
+  }
+  .informations h2{
+    text-align: center;
+    margin-top:15px;
+  
+  }
+  .Menucontent{
+   
+    color:hsl(0, 0%, 0%);
+    margin-top:-520px;
+    margin-right:80%;
+    display:none;
+    padding: 15px;
+    background-color: #ffffff;
+    height:500px;
+  }
+  .Menucontent a{
+    color:#000;
+    text-decoration: none;
+    background-color: #fff;
+    margin-top:8%;
+    padding-left: 15px;
+    
+    
+  }
+  .Menucontent p{
+    padding: 15px;
+    background-color: #fff;
+  }
+  

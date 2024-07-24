@@ -1,0 +1,49 @@
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-dZlMzVo3U8i+6e+jJ0WqzTE2imEnj7PMP1z5X5+C/70I+P/qcEkFZE/XJ/DA1Dj" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../assets/login.css">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
+<div class="container py-4">
+        <h2>CREATE A NEW ACCOUNT</h2>
+        <hr>
+        <form action="inscri.php" method="post">
+        <?php 
+            if(array_key_exists("error",$_GET)):
+             ?>
+            <div class="alert alert-danger">
+                 <?= $_GET['error']; ?>
+            </div>
+             <?php endif ?>
+            <div class="form-group">
+                <label for="nom">First_name *</label>
+                <input type="text" name="nom" id="nom" required class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="prenom">Last_name *</label>
+                <input type="text" name="prenom" id="prenom" required class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="email">Email *</label>
+                <input type="email" name="email" id="email" required placeholder="exemple@gmail.com" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="mdp">Password *</label>
+                <input type="password" name="mdp" id="mdp" required class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="confirmer_mdp">Confirm password *</label>
+                <input type="password" name="confirmer_mdp" id="confirmer_mdp" required class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="adresse">Adress *</label>
+                <input type="text" name="adresse" id="adresse" required class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="tel">Phone number *</label>
+                <input type="tel" name="tel" id="tel" required class="form-control">
+            </div>
+       <br>
+            <button type="submit"class="btn-btn" >Sign Up</button>
+        </form>
+    </div>

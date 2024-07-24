@@ -1,0 +1,69 @@
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <div class="container-fluid">
+   
+    <div class="row">
+<aside class="bg-light border-end border-secondary" style="height: 100vh; width: 280px;top:90px;">
+<div class="sidebar-header">
+       
+        <img src="../assets/images/profile2.jpg" alt="Avatar" class="img-fluid rounded-circle"style=" width: 220px;margin-top:50px;">
+    </div>
+<div class="p-4">
+   
+    <ul class="nav flex-column">
+      <li class="nav-item">
+        <a class="nav-link" href="#">
+          <span> <?= $cls['nom'].' '.$cls['prenom'] ?></span>
+        </a>
+      </li>
+   
+        <ul class="nav flex-column ml-3">
+          <li class="nav-item">
+            <a class="nav-link" href="#" onclick="loadContent('list_product.php?id='. $cls['id_membre'])">history commande</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" onclick="loadContent('updatePwd.php?id='. $cls['id_membre'])"><i class="bi bi-key"></i>Change_password</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" onclick="loadContent('add_product.php')">Add_product</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" onclick="loadContent('inscri.php')">Edit_profile</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="bi bi-box-arrow-right"></i> Sign Out</a>
+          </li>
+        </ul>
+      
+    </ul>
+  </div>
+</aside>
+
+
+  <div class="col">
+        <div class="container mt-4" style="max-height: 600px;overflow-y: auto;">
+        <h3 style="margin-top:50px">Welcom to your account</h3><hr>
+                <div id="main-content">
+                  <?php if (isset($_GET['success']) && $_GET['success'] == 1) {
+                 echo '<div class="alert alert-success" role="alert">Ajout avec succès!</div>';};
+                  ?>
+            </div>
+            </div>
+   </div>
+                  </div>
+                  </div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script>
+function loadContent(page) {
+    
+    $(".alert").hide();
+    const randomParam = Math.random();
+    const urlWithRandomParam = `${page}?random=${randomParam}`;
+  
+    $("#main-content").load(page);
+}
+</script>

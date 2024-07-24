@@ -1,0 +1,82 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #efefef;
+}
+
+.container {
+    max-width: 500px;
+    margin: 100px auto;
+    margin-left: 100px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 1px 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 8px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+input {
+    padding: 8px;
+    margin-bottom: 16px;
+}
+
+ .btn-btn {
+    padding: 10px;
+    margin-left: 20%;
+    margin-right: 20%;
+    background-color: #000000;
+    color: #fff;
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 16px;
+}
+
+.btn-btn:hover {
+    background-color: #ffffff;
+    color :black;
+    border: 1px solid black;
+    
+}
+
+.error {
+    color: rgb(206, 17, 17);
+    margin-bottom: 16px;
+}
+a.btn{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    border: 1px solid rgb(0, 0, 0);
+    background-color: white;
+    border-radius: 20px;
+    color: #000000;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    margin-left: 40%;
+
+
+}
+a.btn:hover{
+    border: 2px solid rgb(0, 0, 0); 
+}
+
+    
+    
+
+
+input, select {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #2c2c2c;
+    border-radius: 4px;
+}
